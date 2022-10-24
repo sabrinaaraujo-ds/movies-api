@@ -19,7 +19,7 @@ const Card = ({ movie }) => {
 
   return (
     <S.CardContainer>
-      <img onClick={onCardClick} src={path}></img>
+      <img onClick={onCardClick} src={path} alt="movie poster"></img>
       <S.MovieTitle>{movie.title}</S.MovieTitle>
       <S.Info>
         <p>Rating: {movie.vote_average}</p>

@@ -18,6 +18,7 @@
     "@testing-library/react": "^13.4.0",
     "hash-wasm": "^4.9.0",
     "md5": "^2.3.0",
+    "npm": "^8.19.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
@@ -28,9 +29,16 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "@vitest/ui": "^0.24.3",
+    "cross-fetch": "^3.1.5",
     "jsdom": "^20.0.1",
+    "msw": "^0.47.4",
     "react-error-overlay": "^6.0.9",
     "vite": "^3.1.0",
+    "vite-plugin-node-polyfills": "^0.4.0",
     "vitest": "^0.24.3"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

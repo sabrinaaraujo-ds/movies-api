@@ -4,7 +4,7 @@ import App from "../App";
 import NavBar from "../components/NavBar";
 import MoviePage from "../pages/MoviePage";
 import Home from "../pages/Home";
-import { MovieContext, MovieProvider } from "../Context";
+import { MovieProvider } from "../Context";
 import WatchList from "../pages/WatchList";
 
 export default (
