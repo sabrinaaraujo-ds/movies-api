@@ -6,7 +6,7 @@ import { expect } from "vitest";
 expect.extend(matchers);
 global.fetch = fetch;
 // Establish API mocking before all tests.
-beforeAll(() => server.listen());
+beforeAll(() => server.listen({ onUnhandledRequest: "error" }));
 // Reset any request handlers that we may add during the tests,
 // so they don't affect other tests.
 afterEach(() => server.resetHandlers());

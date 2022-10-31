@@ -22,7 +22,7 @@ const Card = ({ movie }) => {
       <img onClick={onCardClick} src={path} alt="movie poster"></img>
       <S.MovieTitle>{movie.title}</S.MovieTitle>
       <S.Info>
-        <p>Rating: {movie.vote_average}</p>
+        <p>Rating: {movie.vote_average.toFixed(1)}</p>
 
         {location.pathname === "/watchList" ? (
           <S.RemoveButton data-testid="add-button">
