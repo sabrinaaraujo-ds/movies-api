@@ -25,15 +25,16 @@ const Card = ({ movie }) => {
         <p>Rating: {movie.vote_average.toFixed(1)}</p>
 
         {location.pathname === "/watchList" ? (
-          <S.RemoveButton data-testid="add-button">
+          <S.RemoveButton>
             <IoMdRemoveCircle
               size="2rem"
               onClick={() => removeMovieFromWatchList(movie.id)}
             />
           </S.RemoveButton>
         ) : (
-          <S.AddButton data-testid="add-button" isDisabled={isMovieInWatchlist}>
+          <S.AddButton isDisabled={isMovieInWatchlist} data-testid="add-button">
             <IoIosAddCircle
+              data-testid="add-icon"
               size="2rem"
               onClick={() => addMovieToWatchList(movie)}
             />

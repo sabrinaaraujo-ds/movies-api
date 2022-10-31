@@ -1,5 +1,6 @@
 import { describe, it } from "vitest";
-import { screen, userEvent } from "@testing-library/react";
+import { fireEvent, screen } from "@testing-library/react";
+import { debug } from "vitest-preview";
 import { renderWithClient } from "../../Utils/utils";
 import Home from ".";
 
@@ -7,7 +8,7 @@ describe("HomePage", () => {
   beforeEach(() => {
     renderWithClient(<Home />);
   });
-
+  debug();
   it("Should render page title", async () => {
     expect(await screen.findByText("POPULAR MOVIES NOW")).toBeInTheDocument();
   });

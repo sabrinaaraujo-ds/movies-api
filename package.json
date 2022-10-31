@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "vitest-preview": "vitest-preview"
   },
   "dependencies": {
     "@emotion/css": "^11.10.0",
@@ -26,6 +27,7 @@
     "react-router-dom": "^6.4.0"
   },
   "devDependencies": {
+    "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
@@ -36,7 +38,8 @@
     "react-error-overlay": "^6.0.9",
     "vite": "^3.1.0",
     "vite-plugin-node-polyfills": "^0.4.0",
-    "vitest": "^0.24.3"
+    "vitest": "^0.24.3",
+    "vitest-preview": "^0.0.1"
   },
   "msw": {
     "workerDirectory": "public"
